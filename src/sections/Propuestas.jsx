@@ -158,9 +158,9 @@ export default function Propuestas() {
                         </div>
                         <div className="md:w-1/2 w-full">
                             <img
-                                src=\"/bicimad_corporate.png\"
-                                alt=\"BiciMAD Corporate\"
-                                className=\"rounded-xl shadow-xl border border-gray-100 object-cover h-[350px] w-full object-top\"
+                                src="/bicimad_corporate.png"
+                                alt="BiciMAD Corporate"
+                                className="rounded-xl shadow-xl border border-gray-100 object-cover h-[350px] w-full object-top"
                             />
                         </div>
                     </div>
@@ -171,52 +171,172 @@ export default function Propuestas() {
 
 
                 {/* Propuesta B: BiciMAD Metropolitan */}
-                <div className=\"mb-28 bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-100 relative overflow-hidden\">
+                <div className="mb-28 bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
 
-                    <div className=\"flex flex-col md:flex-row gap-12 relative z-10\">
-                        <div className=\"md:w-1/2\">
-                            <div className=\"inline-flex items-center gap-2 px-3 py-1 bg-emt-blue/10 text-emt-blue text-xs font-bold uppercase rounded-full tracking-wider mb-4 border border-emt-blue/20\">
+                    <div className="flex flex-col md:flex-row gap-12 relative z-10">
+                        <div className="md:w-1/2">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emt-blue/10 text-emt-blue text-xs font-bold uppercase rounded-full tracking-wider mb-4 border border-emt-blue/20">
                                 <Map size={14} /> Propuesta B
                             </div>
-                            <h3 className=\"text-3xl font-display font-bold text-emt-dark mb-4\">
+                            <h3 className="text-3xl font-display font-bold text-emt-dark mb-4">
                                 BiciMAD Metropolitan.<br />BaaS (BiciMAD as a Service) para Ayuntamientos.
                             </h3>
-                            <p className=\"text-gray-600 mb-6 text-lg\">
+                            <p className="text-gray-600 mb-6 text-lg">
                                 La expansión a Pozuelo no debería ser una <em>rara avis</em>, sino la génesis de un producto franquiciable llave en mano (B2G) para todos los municipios limítrofes.
                             </p>
-                            <div className=\"bg-white p-6 rounded-xl border border-gray-100 shadow-sm mb-6\">
-                                <h4 className=\"font-bold text-emt-dark mb-3 flex items-center gap-2\"><Map className=\"text-emt-blue\" size={18} /> Paquetes Estandarizados B2G</h4>
-                                <table className=\"w-full text-sm text-left\">
+                            <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm mb-6">
+                                <h4 className="font-bold text-emt-dark mb-3 flex items-center gap-2"><Map className="text-emt-blue" size={18} /> Paquetes Estandarizados B2G</h4>
+                                <table className="w-full text-sm text-left">
                                     <thead>
-                                        <tr className=\"border-b border-gray-200\">
-                                            <th className=\"py-2 text-gray-500\">Tier</th>
-                                            <th className=\"py-2 text-gray-500\">Estaciones</th>
-                                            <th className=\"py-2 text-gray-500\">Población (hab.)</th>
+                                        <tr className="border-b border-gray-200">
+                                            <th className="py-2 text-gray-500">Tier</th>
+                                            <th className="py-2 text-gray-500">Estaciones</th>
+                                            <th className="py-2 text-gray-500">Población (hab.)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr className=\"border-b border-gray-50\">
-                                            <td className=\"py-2 font-bold text-gray-800\">S (Small)</td>
-                                            <td className=\"py-2 text-gray-600\">15 - 20</td>
-                                            <td className=\"py-2 text-gray-600\">{\"{'> 50.000'}\"}</td>
+                                        <tr className="border-b border-gray-50">
+                                            <td className="py-2 font-bold text-gray-800">S (Small)</td>
+                                            <td className="py-2 text-gray-600">15 - 20</td>
+                                            <td className="py-2 text-gray-600">{"< 50.000"}</td>
                                         </tr>
-                                        <tr className=\"border-b border-gray-50\">
-                                            <td className=\"py-2 font-bold text-gray-800\">M (Mid)</td>
-                                            <td className=\"py-2 text-gray-600\">25 - 40</td>
-                                            <td className=\"py-2 text-gray-600\">50k - 150k</td>
+                                        <tr className="border-b border-gray-50">
+                                            <td className="py-2 font-bold text-gray-800">M (Mid)</td>
+                                            <td className="py-2 text-gray-600">25 - 40</td>
+                                            <td className="py-2 text-gray-600">50k - 150k</td>
                                         </tr>
                                         <tr>
-                                            <td className=\"py-2 font-bold text-gray-800\">L (Large)</td>
-                                            <td className=\"py-2 text-gray-600\">40 - 60</td>
-                                            <td className=\"py-2 text-gray-600\">{\"{'> 150.000'}\"}</td>
+                                            <td className="py-2 font-bold text-gray-800">L (Large)</td>
+                                            <td className="py-2 text-gray-600">40 - 60</td>
+                                            <td className="py-2 text-gray-600">{"> 150.000"}</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <p className=\"text-sm text-gray-500\"><strong>El Modelo Económico:</strong> El municipio financia las estaciones (CAPEX fijado en su suelo público). EMT despliega las bicis, licencias y sistema bajo un único <em>fee annual.</em></p>
+                            <p className="text-sm text-gray-500"><strong>El Modelo Económico:</strong> El municipio financia las estaciones (CAPEX fijado en su suelo público). EMT despliega las bicis, licencias y sistema bajo un único <em>fee annual.</em></p>
                         </div>
 
-                        <div className=\"md:w-1/2 flex flex-col justify-center gap-4\">
-                            <div className=\"bg-white p-4 rounded-xl border border-green-100 shadow-sm flex items-center justify-between group cursor-pointer hover:border-emt-green transition-all\">
+                        <div className="md:w-1/2 flex flex-col justify-center gap-4">
+                            <div className="bg-white p-4 rounded-xl border border-green-100 shadow-sm flex items-center justify-between group cursor-pointer hover:border-emt-green transition-all">
                                 <div>
-                                    <p className=\"font-bold text-gray-800 text-lg\">Pozuelo de Alarcón</p>\n                                    <p className=\"text-xs text-gray-500\">88.000 hab. · Continuidad Urbana M-40</p>\n                                </div>\n                                <span className=\"text-xs font-bold text-white bg-emt-green px-2 py-1 rounded\">✅ Confirmado</span>\n                            </div>\n                            <div className=\"bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center justify-between opacity-80 hover:opacity-100 transition-all\">\n                                <div>\n                                    <p className=\"font-bold text-gray-800 text-lg\">Alcobendas / S.S. Reyes</p>\n                                    <p className=\"text-xs text-gray-500\">~210.000 hab. (Polo Norte)</p>\n                                </div>\n                                <span className=\"text-xs font-bold text-emt-orange bg-orange-100 px-2 py-1 rounded\">Alta Prioridad</span>\n                            </div>\n                            <div className=\"bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center justify-between opacity-80 hover:opacity-100 transition-all\">\n                                <div>\n                                    <p className=\"font-bold text-gray-800 text-lg\">Getafe / Leganés</p>\n                                    <p className=\"text-xs text-gray-500\">~375.000 hab. (Polo Sur M-45)</p>\n                                </div>\n                                <span className=\"text-xs font-bold text-emt-blue bg-blue-100 px-2 py-1 rounded\">Fase 2 Prospectiva</span>\n                            </div>\n                            <div className=\"bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center justify-between opacity-50 hover:opacity-100 transition-all\">\n                                <div>\n                                    <p className=\"font-bold text-gray-800 text-lg\">Las Rozas / Majadahonda</p>\n                                    <p className=\"text-xs text-gray-500\">~173.000 hab. (A-6)</p>\n                                </div>\n                                <span className=\"text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded\">Estudio Previsto</span>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                {/* Propuesta C: Teleférico Experience */}\n                <div>\n                    <div className=\"flex flex-col md:flex-row-reverse gap-12 items-start mb-10\">\n                        <div className=\"md:w-1/2\">\n                            <div className=\"inline-flex items-center gap-2 px-3 py-1 bg-emt-orange/10 text-emt-orange text-xs font-bold uppercase rounded-full tracking-wider mb-4 border border-emt-orange/20\">\n                                <Lightbulb size={14} /> Propuesta C\n                            </div>\n                            <h3 className=\"text-3xl font-display font-bold text-emt-dark mb-4\">\n                                Teleférico Experience.<br />Nuevo Pricing y Posicionamiento.\n                            </h3>\n                            <p className=\"text-gray-600 mb-6 text-lg\">\n                                26 millones invertidos obligan a transformar una atracción nostálgica en un <strong>activo turístico premium</strong> a la altura europea, estratificando el producto para maximizar el retorno de inversión.\n                            </p>\n                            <ul className=\"space-y-4 mb-8 text-sm\">\n                                <li className=\"flex gap-3 text-gray-700 items-center bg-gray-50 p-3 rounded-lg border border-gray-100\">\n                                    <span className=\"w-8 h-8 rounded bg-white font-bold text-emt-blue flex items-center justify-center shrink-0 shadow-sm\">N1</span>\n                                    <span><strong>General (Target Local):</strong> ~9€/10€. Precio base de acceso ida/vuelta.</span>\n                                </li>\n                                <li className=\"flex gap-3 text-gray-700 items-center bg-gray-50 p-3 rounded-lg border border-gray-100\">\n                                    <span className=\"w-8 h-8 rounded bg-white font-bold text-purple-600 flex items-center justify-center shrink-0 shadow-sm\">N2</span>\n                                    <span><strong>VIP Express (Sunset Toast):</strong>  ~25€. \"Fast-pass\" sin colas + Copa de Champagne In-Cabin (aprovechando los 22 min. de I/V en exclusiva).</span>\n                                </li>\n                                <li className=\"flex gap-3 text-gray-700 items-center bg-gray-50 p-3 rounded-lg border border-gray-100\">\n                                    <span className=\"w-8 h-8 rounded bg-white font-bold text-amber-700 flex items-center justify-center shrink-0 shadow-sm\">N3</span>\n                                    <span><strong>Gastronómico/Eventos:</strong> ~45€. Ticket combinado: Cabina VIP + Evento/Cena en la terminal (restaurante).</span>\n                                </li>\n                            </ul>\n                        </div>\n                        <div className=\"md:w-1/2 w-full\">\n                            <img\n                                src=\"/teleferico.png\"\n                                alt=\"Teleferico Premium Concept\"\n                                className=\"rounded-xl shadow-xl border border-gray-100 object-cover h-[450px] w-full\"\n                            />\n                        </div>\n                    </div>\n\n                    <TelefericoSimulator />\n                </div>\n\n                {/* Propuesta D: Mobility360 Marketplace */}\n                <div className=\"mt-28\">\n                    <div className=\"flex flex-col md:flex-row gap-12 items-start mb-10\">\n                        <div className=\"md:w-1/2\">\n                            <div className=\"inline-flex items-center gap-2 px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold uppercase rounded-full tracking-wider mb-4 border border-purple-200\">\n                                <Smartphone size={14} /> Propuesta D\n                            </div>\n                            <h3 className=\"text-3xl font-display font-bold text-emt-dark mb-4\">\n                                Mobility360 Marketplace.<br />Monetización de Última Milla.\n                            </h3>\n                            <p className=\"text-gray-600 mb-6 text-lg\">\n                                Convertir el gasto en infraestructura digital (App) en un <strong>centro de beneficio (Centro de Ingresos)</strong> asumiendo el rol oficial de <em>Booking.com</em> o <em>Amazon</em> de la movilidad compartida de Madrid.\n                            </p>\n                            <ul className=\"space-y-4 mb-8\">\n                                <li className=\"flex gap-3 text-gray-600 items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm\">\n                                    <span className=\"w-8 h-8 rounded bg-white font-bold text-purple-600 flex items-center justify-center shrink-0 shadow-sm\">1</span>\n                                    <div>\n                                        <strong className=\"block text-gray-900 mb-1\">Integración Premium \"Book & Pay\"</strong>\n                                        Permitir al usuario no solo \"ver\", sino alquilar los patinetes o motos privadas directamente sin salir ni registrarse en la app del operador.\n                                    </div>\n                                </li>\n                                <li className=\"flex gap-3 text-gray-600 items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm\">\n                                    <span className=\"w-8 h-8 rounded bg-white font-bold text-emt-blue flex items-center justify-center shrink-0 shadow-sm\">2</span>\n                                    <div>\n                                        <strong className=\"block text-gray-900 mb-1\">Revenue Share (El Take Rate)</strong>\n                                        En base a acuerdos B2B, EMT comisiona un % fijo estándar (5%-12%) por cada viaje de un ciudadano en flota privada iniciado desde la app pública debido a la aportación de dicho tráfico cualificado.\n                                    </div>\n                                </li>\n                                <li className=\"flex gap-3 text-gray-600 items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm\">\n                                    <span className=\"w-8 h-8 rounded bg-white font-bold text-emt-green flex items-center justify-center shrink-0 shadow-sm\">3</span>\n                                    <div>\n                                        <strong className=\"block text-gray-900 mb-1\">B2B Mobility Wallet Corporativo</strong>\n                                        El complemento para grandes consultoras (HR). Crean cuentas a empleados con un saldo gestionado por RRHH de 50€/mes gastables en todo el mix intermodal disponible en la app bajo un único proveedor (EMT).\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                        <div className=\"md:w-1/2 w-full\">\n                            <img\n                                src=\"/mobility360.png\"\n                                alt=\"Mobility360 Mockup\"\n                                className=\"rounded-xl shadow-xl border border-gray-100 object-cover h-[500px] w-full\"\n                            />\n                        </div>\n                    </div>\n                </div>\n\n            </div>\n        </section>\n    );\n}
+                                    <p className="font-bold text-gray-800 text-lg">Pozuelo de Alarcón</p>
+                                    <p className="text-xs text-gray-500">88.000 hab. · Continuidad Urbana M-40</p>
+                                </div>
+                                <span className="text-xs font-bold text-white bg-emt-green px-2 py-1 rounded">✅ Confirmado</span>
+                            </div>
+                            <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center justify-between opacity-80 hover:opacity-100 transition-all">
+                                <div>
+                                    <p className="font-bold text-gray-800 text-lg">Alcobendas / S.S. Reyes</p>
+                                    <p className="text-xs text-gray-500">~210.000 hab. (Polo Norte)</p>
+                                </div>
+                                <span className="text-xs font-bold text-emt-orange bg-orange-100 px-2 py-1 rounded">Alta Prioridad</span>
+                            </div>
+                            <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center justify-between opacity-80 hover:opacity-100 transition-all">
+                                <div>
+                                    <p className="font-bold text-gray-800 text-lg">Getafe / Leganés</p>
+                                    <p className="text-xs text-gray-500">~375.000 hab. (Polo Sur M-45)</p>
+                                </div>
+                                <span className="text-xs font-bold text-emt-blue bg-blue-100 px-2 py-1 rounded">Fase 2 Prospectiva</span>
+                            </div>
+                            <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex items-center justify-between opacity-50 hover:opacity-100 transition-all">
+                                <div>
+                                    <p className="font-bold text-gray-800 text-lg">Las Rozas / Majadahonda</p>
+                                    <p className="text-xs text-gray-500">~173.000 hab. (A-6)</p>
+                                </div>
+                                <span className="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded">Estudio Previsto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Propuesta C: Teleférico Experience */}
+                <div>
+                    <div className="flex flex-col md:flex-row-reverse gap-12 items-start mb-10">
+                        <div className="md:w-1/2">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emt-orange/10 text-emt-orange text-xs font-bold uppercase rounded-full tracking-wider mb-4 border border-emt-orange/20">
+                                <Lightbulb size={14} /> Propuesta C
+                            </div>
+                            <h3 className="text-3xl font-display font-bold text-emt-dark mb-4">
+                                Teleférico Experience.<br />Nuevo Pricing y Posicionamiento.
+                            </h3>
+                            <p className="text-gray-600 mb-6 text-lg">
+                                26 millones invertidos obligan a transformar una atracción nostálgica en un <strong>activo turístico premium</strong> a la altura europea, estratificando el producto para maximizar el retorno de inversión.
+                            </p>
+                            <ul className="space-y-4 mb-8 text-sm">
+                                <li className="flex gap-3 text-gray-700 items-center bg-gray-50 p-3 rounded-lg border border-gray-100">
+                                    <span className="w-8 h-8 rounded bg-white font-bold text-emt-blue flex items-center justify-center shrink-0 shadow-sm">N1</span>
+                                    <span><strong>General (Target Local):</strong> ~9€/10€. Precio base de acceso ida/vuelta.</span>
+                                </li>
+                                <li className="flex gap-3 text-gray-700 items-center bg-gray-50 p-3 rounded-lg border border-gray-100">
+                                    <span className="w-8 h-8 rounded bg-white font-bold text-purple-600 flex items-center justify-center shrink-0 shadow-sm">N2</span>
+                                    <span><strong>VIP Express (Sunset Toast):</strong>  ~25€. "Fast-pass" sin colas + Copa de Champagne In-Cabin (aprovechando los 22 min. de I/V en exclusiva).</span>
+                                </li>
+                                <li className="flex gap-3 text-gray-700 items-center bg-gray-50 p-3 rounded-lg border border-gray-100">
+                                    <span className="w-8 h-8 rounded bg-white font-bold text-amber-700 flex items-center justify-center shrink-0 shadow-sm">N3</span>
+                                    <span><strong>Gastronómico/Eventos:</strong> ~45€. Ticket combinado: Cabina VIP + Evento/Cena en la terminal (restaurante).</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="md:w-1/2 w-full">
+                            <img
+                                src="/teleferico.png"
+                                alt="Teleferico Premium Concept"
+                                className="rounded-xl shadow-xl border border-gray-100 object-cover h-[450px] w-full"
+                            />
+                        </div>
+                    </div>
+
+                    <TelefericoSimulator />
+                </div>
+
+                {/* Propuesta D: Mobility360 Marketplace */}
+                <div className="mt-28">
+                    <div className="flex flex-col md:flex-row gap-12 items-start mb-10">
+                        <div className="md:w-1/2">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold uppercase rounded-full tracking-wider mb-4 border border-purple-200">
+                                <Smartphone size={14} /> Propuesta D
+                            </div>
+                            <h3 className="text-3xl font-display font-bold text-emt-dark mb-4">
+                                Mobility360 Marketplace.<br />Monetización de Última Milla.
+                            </h3>
+                            <p className="text-gray-600 mb-6 text-lg">
+                                Convertir el gasto en infraestructura digital (App) en un <strong>centro de beneficio (Centro de Ingresos)</strong> asumiendo el rol oficial de <em>Booking.com</em> o <em>Amazon</em> de la movilidad compartida de Madrid.
+                            </p>
+                            <ul className="space-y-4 mb-8">
+                                <li className="flex gap-3 text-gray-600 items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                    <span className="w-8 h-8 rounded bg-white font-bold text-purple-600 flex items-center justify-center shrink-0 shadow-sm">1</span>
+                                    <div>
+                                        <strong className="block text-gray-900 mb-1">Integración Premium "Book & Pay"</strong>
+                                        Permitir al usuario no solo "ver", sino alquilar los patinetes o motos privadas directamente sin salir ni registrarse en la app del operador.
+                                    </div>
+                                </li>
+                                <li className="flex gap-3 text-gray-600 items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                    <span className="w-8 h-8 rounded bg-white font-bold text-emt-blue flex items-center justify-center shrink-0 shadow-sm">2</span>
+                                    <div>
+                                        <strong className="block text-gray-900 mb-1">Revenue Share (El Take Rate)</strong>
+                                        En base a acuerdos B2B, EMT comisiona un % fijo estándar (5%-12%) por cada viaje de un ciudadano en flota privada iniciado desde la app pública debido a la aportación de dicho tráfico cualificado.
+                                    </div>
+                                </li>
+                                <li className="flex gap-3 text-gray-600 items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
+                                    <span className="w-8 h-8 rounded bg-white font-bold text-emt-green flex items-center justify-center shrink-0 shadow-sm">3</span>
+                                    <div>
+                                        <strong className="block text-gray-900 mb-1">B2B Mobility Wallet Corporativo</strong>
+                                        El complemento para grandes consultoras (HR). Crean cuentas a empleados con un saldo gestionado por RRHH de 50€/mes gastables en todo el mix intermodal disponible en la app bajo un único proveedor (EMT).
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="md:w-1/2 w-full">
+                            <img
+                                src="/mobility360.png"
+                                alt="Mobility360 Mockup"
+                                className="rounded-xl shadow-xl border border-gray-100 object-cover h-[500px] w-full"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    );
+}
