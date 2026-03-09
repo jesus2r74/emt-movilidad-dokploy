@@ -92,7 +92,6 @@ app.listen(PORT, () => {
     console.log(`EMT Proxy server is running on http://localhost:${PORT}`);
 });
 
-// Todas las demás peticiones que no sean a la API, retornan la app React (index.html)
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
     res.sendFile(join(__dirname, '../dist/index.html'));
 });
