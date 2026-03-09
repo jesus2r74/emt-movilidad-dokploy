@@ -88,10 +88,11 @@ app.get('/api/stations', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`EMT Proxy server is running on http://localhost:${PORT}`);
-});
-
+// Catch-all route - must be defined BEFORE app.listen()
 app.get(/.*/, (req, res) => {
     res.sendFile(join(__dirname, '../dist/index.html'));
+});
+
+app.listen(PORT, () => {
+    console.log(`EMT Proxy server is running on http://localhost:${PORT}`);
 });
