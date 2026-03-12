@@ -34,7 +34,7 @@ export default function Hero({ onScrollDown }) {
                         className="w-full aspect-video bg-black cursor-pointer"
                         poster="/play.png"
                     >
-                        <source src="/EMT.mp4" type="video/mp4" />
+                        <source src="/emt.mp4" type="video/mp4" />
                         Tu navegador no soporta el formato de vídeo.
                     </video>
                 </div>
